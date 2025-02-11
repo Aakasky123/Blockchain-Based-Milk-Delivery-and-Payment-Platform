@@ -1,0 +1,55 @@
+{% load static %}
+<html>
+<head>
+<title>Blockchain based Milk Delivery</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><font color="orange" size=6>Blockchain based Milk Delivery Platform for Stallholder Dairy Farmers in Kenya: Enforcing Transparency and Fair Payment</font></h1>
+	  <marquee><font color="pink" size=4>Blockchain based Milk Delivery</font></marquee>
+    </div>
+   
+  
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="{% url 'AddStaff' %}">Add New NADAFA Staff</a></li>
+	  <li><a href="{% url 'AddFarmer' %}">Add New Farmer</a></li>
+	  <li><a href="{% url 'ViewStaff' %}">View Staff</a></li>
+	  <li><a href="{% url 'ViewFarmer' %}">View Farmers</a></li>
+      <li><a href="{% url 'index' %}">Logout</a></li>
+   </ul>
+  </div>
+  <div id="page">
+   <div id="content">
+      <div class="post">
+        <div class="title">
+          <h2>Blockchain based Milk Delivery</h2>
+         </div>
+        <div class="entry">
+		 <br/><br/><br/>
+<center><font size="3" color="white">{{ data }}</font></center>
+	 
+	 <br>
+          <p><img src="{% static 'images/images.jpg' %}" alt="" width="890" height="200" class="left" /><p></p><font size="4" color="white">
+         <center><br/>About Blockchain based Milk Delivery</center></font></p>
+          <p><font size="" color="white">Abstract:- The dairy industry in Kenya accounts for 4% of the country's GDP and provides a source of income and livelihood to a significant proportion of Kenya's population. The sector currently provides income and employment to over 2 million people across the dairy value chain. The dairy farmers, who are mostly smallholder farmers, rely on local milk collection centres that manually records milk delivery transaction in some hardcopy inventory files, which are stored in their offices. </p>
+
+ <p><font size="" color="white">These records have been susceptible to modifications and deletions by these centres to cut down on their payments to farmers. Thus, this paper explores the potential use of blockchain technology in milk delivery among smallholder farmers in the rural areas in developing nations towards creating transparency, trustworthiness and fairness in payment to these farmers. We seek to design a farmer centric blockchain based platform that ensures that farmers are protected from unscrupulous and predatory middlemen in the milk delivery chain that exploit the illiterate and the unsuspecting farmers.</p>
+          </div>
+        
+      </div>
+     
+       
+       
+    </div>
+    
+  </div>
+
+</body>
+</html>

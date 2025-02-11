@@ -1,0 +1,51 @@
+{% load static %}
+<html>
+<head>
+<title>Blockchain based Milk Delivery</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><font color="orange" size=6>Blockchain based Milk Delivery Platform for Stallholder Dairy Farmers in Kenya: Enforcing Transparency and Fair Payment</font></h1>
+	  <marquee><font color="pink" size=4>Blockchain based Milk Delivery</font></marquee>
+    </div>
+   
+  
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="{% url 'AddStaff' %}">Add New NADAFA Staff</a></li>
+	  <li><a href="{% url 'AddFarmer' %}">Add New Farmer</a></li>
+	  <li><a href="{% url 'ViewStaff' %}">View Staff</a></li>
+	  <li><a href="{% url 'ViewFarmer' %}">View Farmers</a></li>
+      <li><a href="{% url 'index' %}">Logout</a></li>
+   </ul>
+  </div>
+  <div id="page">
+   <div id="content">
+      <div class="post">
+        <div class="title">
+          <h2>View Farmer Details Screen</h2>
+         </div>
+        <div class="entry">
+		 <br/><br/><br/>
+		 {{ data | safe }}
+		 </tr>
+</table>
+<br/><br/><br/>
+          </div>
+        
+      </div>
+     
+       
+       
+    </div>
+    
+  </div>
+
+</body>
+</html>
