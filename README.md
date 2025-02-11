@@ -24,6 +24,7 @@ A web application allows farmers and staff to view transaction details and gener
 Farmers can monitor earnings and use their transaction history for financial assistance.
 
 Benefits
+
 ✔ Full transparency – Farmers can verify payments without intermediaries.
 
 ✔ Fair payments – Automated, tamper-proof records prevent exploitation.
@@ -52,9 +53,11 @@ Run the Blockchain Server
 
 python blockchain.py
 
+
 Launch the Web Application
 
 python app.py
+
 
 License
 This project is licensed under the MIT License – feel free to use, modify, and distribute.
